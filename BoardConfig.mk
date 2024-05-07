@@ -136,8 +136,8 @@ BOARD_KERNEL_CMDLINE += kpti=off
 BOARD_KERNEL_CMDLINE += init.is_legacy_ebpf=1
 
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CONFIG := vendor/mojito_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/mojito
+TARGET_KERNEL_CONFIG := mojito_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6150
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
