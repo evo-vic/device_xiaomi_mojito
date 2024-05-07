@@ -95,12 +95,6 @@ on boot
     # default country code
     setprop ro.boot.wificountrycode 00
 
-    # Allow system to manipulate kprofiles modes and parameters
-    chown system system /sys/module/kprofiles/parameters/auto_kp
-    chmod 0660 /sys/module/kprofiles/parameters/auto_kp
-    chown system system /sys/kernel/kprofiles/kp_mode
-    chmod 0660 /sys/kernel/kprofiles/kp_mode
-
     chown system system /dev/cpuset/cgroup.procs
     chown system system /dev/cpuset/foreground/cgroup.procs
     chown system system /dev/cpuset/background/cgroup.procs
